@@ -16,4 +16,6 @@ public class Constants {
     public static final String MSG_AVALIACAO_UNPROC_ENTITY = "Erro ao cadastrar avaliacao.";
     public static final String MSG_AVALIACAO_PERFIL_INVALIDO_UNPROC_ENTITY = "Erro ao cadastrar avaliacao. Perfil Invalido.";
     public static final String MSG_PERFIL_VERIFICANDO_EXISTE = "Verificando se perfil existe: ";
+    public static final String MSG_ERRO_AWS_SECRET = "Secret não foi retornado com sucesso.";
+    public static final String ERRO_PROCESSAR_SECRET = "Erro ao processar secret {}";
 }
