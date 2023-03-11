@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "875f54ea-f5a1-4b7a-89e2-81ad5143b178",
+		"name": "ITrackFit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6149731"
+	},
+	"item": [
+		{
+			"name": "Criar Perfil",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Alex Sandro\",\r\n    \"sobrenome\": \"Cammarota\",\r\n    \"idade\": 29,\r\n    \"altura\": 1.71,\r\n    \"sexo\": \"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Avaliacao",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"peso\" : 95.2,\r\n    \"imc\": 32.6,\r\n    \"gordura_corporal\": 36.7,\r\n    \"massa_muscular\": 30.3,\r\n    \"caloria_diaria\": 1966,\r\n    \"idade_corporal\": 61,\r\n    \"gordura_visceral\": 15,\r\n    \"circunferencia_abdominal\": 108\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles/06288ab8-5409-4030-8bd9-b5cb75ab724f/avaliacoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"06288ab8-5409-4030-8bd9-b5cb75ab724f",
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Perfil",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/profiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Avaliacoes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/profiles/06288ab8-5409-4030-8bd9-b5cb75ab724f/avaliacoes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"06288ab8-5409-4030-8bd9-b5cb75ab724f",
+						"avaliacoes"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
